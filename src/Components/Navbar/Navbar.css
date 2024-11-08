@@ -1,0 +1,149 @@
+.navbar{
+    height: 5rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 1rem;
+    top: 0;
+    z-index: 2;
+}
+.logo{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+}
+
+.desktopmenu a{
+    list-style: none;
+    margin: 0 1rem;
+    /* justify-content: space-evenly; */
+    flex-grow: 1;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 1.75rem;
+}
+
+.desktopmenu a:hover{
+    color: #ffffff5d;
+}
+
+.bg-img{
+    background-image: url(./../../assets/hero-bg.png);
+    height: 100vh;
+    /* width: 100%; */
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    /* object-fit: fill; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+.heading-content{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+.shopnow-btn{
+    height: 50px;
+    width: 12rem;
+   margin: 50px auto;
+   display: flex;
+   justify-content: center;
+   padding: 15px 25px;
+   color: white;
+   border: none;
+   background-color: #ffffff5d;
+   font-size: 18px ;
+   border-radius: 15px;
+}
+
+.shopnow-btn:hover{
+    background-color: #746d6d5d;
+    transition: .2s ease-out;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 830px) {
+    .desktopmenu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; 
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.616);
+      width: 100%;
+      text-align: center;
+    }
+  
+    .desktopmenu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .line.active {
+      background-color: #fff; 
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .heading{
+        font-size: 1.5rem;
+        max-width: 55rem;
+    }
+
+    .heading-content{
+        font-size: .75rem; 
+        max-width: 85vw; 
+    }
+
+    .shopnow-btn{
+        font-size: 1.25rem;
+    }
+
+    .bg-img{
+      height: 50vh;
+    }
+  }
